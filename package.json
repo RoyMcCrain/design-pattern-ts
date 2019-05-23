@@ -1,0 +1,22 @@
+{
+  "name": "design-pattern-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:RoyMcCrain/design-pattern-ts.git",
+  "author": "RoyMcCrain <amber.amber0813@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^12.0.2",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.17.1",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "dev": "node --inspect --require ts-node/register index.ts"
+  }
+}
