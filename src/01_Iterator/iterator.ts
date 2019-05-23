@@ -56,7 +56,7 @@ class BookShelf implements Aggregate {
 }
 
 // main処理
-function main(): void {
+export default function main(): void {
   const bookShelf = new BookShelf(4);
   bookShelf.appendBook(new Book("デザインパターン入門"));
   bookShelf.appendBook(new Book("デザインパターン入門マルチスレッド編"));
