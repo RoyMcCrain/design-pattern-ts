@@ -56,13 +56,17 @@ class BookShelf implements Aggregate {
 }
 
 // main処理
-const bookShelf = new BookShelf(4);
-bookShelf.appendBook(new Book("デザインパターン入門"));
-bookShelf.appendBook(new Book("デザインパターン入門マルチスレッド編"));
-bookShelf.appendBook(new Book("プログラマのための数学"));
-bookShelf.appendBook(new Book("数学ガール"));
-const it = bookShelf.iterator();
-while (it.hasNext()) {
-  const book = it.nextA();
-  console.log(book.getName());
+function main(): void {
+  const bookShelf = new BookShelf(4);
+  bookShelf.appendBook(new Book("デザインパターン入門"));
+  bookShelf.appendBook(new Book("デザインパターン入門マルチスレッド編"));
+  bookShelf.appendBook(new Book("プログラマのための数学"));
+  bookShelf.appendBook(new Book("数学ガール"));
+  const it = bookShelf.iterator();
+  while (it.hasNext()) {
+    const book = it.nextA();
+    console.log(book.getName());
+  }
 }
+
+main();
