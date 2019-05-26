@@ -51,13 +51,14 @@ class StringDisplay extends AbstractDisplay {
     this.printLine();
   }
   private printLine(): void {
-    console.log("+");
+    let printString = "+";
     [...Array(this.width)].forEach(
       (): void => {
-        console.log("-");
+        printString = printString + "-";
       }
     );
-    console.log("+");
+    printString = printString + "+";
+    console.log(printString);
   }
 }
 
